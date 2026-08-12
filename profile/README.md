@@ -2,7 +2,7 @@
 
 # Run any VM anywhere
 
-**One Python file boots 17 guest operating systems across 7 CPU architectures -- on Linux, macOS and Windows.**
+**One Python file boots 20 guest operating systems across 7 CPU architectures -- on Linux, macOS and Windows.**
 
 [![PyPI](https://img.shields.io/pypi/v/anyvm.py)](https://pypi.org/project/anyvm.py/)
 [![Python](https://img.shields.io/pypi/pyversions/anyvm.py)](https://pypi.org/project/anyvm.py/)
@@ -64,9 +64,10 @@ anyvm --os openbsd --release 7.9-xfce
   architecture today.
 - **Acceleration is automatic.** KVM, HVF or WHPX is detected and used when
   available, with a clean fall back to TCG emulation when it is not.
-- **Folder sync that works everywhere.** Six backends (`rsync`, `sshfs`,
-  `nfs`, `sys-nfs`, `scp`, `9p`), including a bundled pure-Python NFS server so
-  even Windows and macOS hosts can export a directory without root.
+- **Folder sync that works everywhere.** Seven backends (`rsync`, `sshfs`,
+  `nfs`, `sys-nfs`, `scp`, `9p`, `tar`), including a bundled pure-Python NFS
+  server so even Windows and macOS hosts can export a directory without root,
+  and a `tar` stream for the guests that ship no sshd at all.
 - **A graphical console in your browser.** The built-in VNC web UI starts by
   default, with clipboard, fullscreen, optional password, and one-flag public
   tunnelling via `--remote-vnc`.
@@ -94,6 +95,15 @@ anyvm --os openbsd --release 7.9-xfce
 | BlissOS (Android)<br>[![Test BlissOS](https://github.com/anyvm-org/anyvm/actions/workflows/blissos.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/blissos.yml) | ✅ | — | — | — | — | — | — | [![Build BlissOS](https://github.com/anyvm-org/blissos-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/blissos-builder) |
 | GNU Hurd (Debian)<br>[![Test Hurd](https://github.com/anyvm-org/anyvm/actions/workflows/hurd.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/hurd.yml) | ✅ (also i386) | — | — | — | — | — | — | [![Build Hurd](https://github.com/anyvm-org/hurd-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/hurd-builder) |
 | Plan 9 (9front)<br>[![Test Plan 9](https://github.com/anyvm-org/anyvm/actions/workflows/plan9.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/plan9.yml) | ✅ | — | — | — | — | — | — | [![Build Plan 9](https://github.com/anyvm-org/plan9-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/plan9-builder) |
+| ReactOS<br>[![Test ReactOS](https://github.com/anyvm-org/anyvm/actions/workflows/reactos.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/reactos.yml) | ✅ (i386 only) | — | — | — | — | — | — | [![Build ReactOS](https://github.com/anyvm-org/reactos-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/reactos-builder) |
+| RISC OS<br>[![Test RISC OS](https://github.com/anyvm-org/anyvm/actions/workflows/riscos.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/riscos.yml) | — | ✅ (armv7 only) | — | — | — | — | — | [![Build RISC OS](https://github.com/anyvm-org/riscos-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/riscos-builder) |
+| Redox OS<br>[![Test Redox](https://github.com/anyvm-org/anyvm/actions/workflows/redox.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/redox.yml) | ✅ | — | — | — | — | — | — | [![Build Redox](https://github.com/anyvm-org/redox-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/redox-builder) |
+
+Each column also covers the 32-bit member of its own family rather than earning
+the table an extra axis: `x86_64` covers `i386` (ReactOS has only that one;
+Hurd ships both), and `aarch64` covers 32-bit `armv7`, which today means RISC
+OS and only RISC OS. Both resolve their own architecture -- `--os reactos` and
+`--os riscos` need no `--arch`.
 
 Hosts: Linux, macOS and Windows, natively on x86_64 and arm64. See the
 [anyvm README](https://github.com/anyvm-org/anyvm#5-host-support) for the full
@@ -143,6 +153,9 @@ builder repository, which builds, boots and publishes that guest's images:
 [openeuler](https://github.com/anyvm-org/openeuler-builder) &middot;
 [openindiana](https://github.com/anyvm-org/openindiana-builder) &middot;
 [plan9](https://github.com/anyvm-org/plan9-builder) &middot;
+[reactos](https://github.com/anyvm-org/reactos-builder) &middot;
+[redox](https://github.com/anyvm-org/redox-builder) &middot;
+[riscos](https://github.com/anyvm-org/riscos-builder) &middot;
 [solaris](https://github.com/anyvm-org/solaris-builder) &middot;
 [tribblix](https://github.com/anyvm-org/tribblix-builder) &middot;
 [ubuntu](https://github.com/anyvm-org/ubuntu-builder)
