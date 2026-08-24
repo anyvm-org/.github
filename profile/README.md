@@ -2,7 +2,7 @@
 
 # Run any VM anywhere
 
-**One Python file boots 24 guest operating systems across 7 CPU architectures -- on Linux, macOS and Windows.**
+**One Python file boots 25 guest operating systems across 7 CPU architectures -- on Linux, macOS and Windows.**
 
 [![PyPI](https://img.shields.io/pypi/v/anyvm.py)](https://pypi.org/project/anyvm.py/)
 [![Python](https://img.shields.io/pypi/pyversions/anyvm.py)](https://pypi.org/project/anyvm.py/)
@@ -81,6 +81,7 @@ anyvm --os openbsd --release 7.9-xfce
 | Ubuntu<br>[![Test Ubuntu](https://github.com/anyvm-org/anyvm/actions/workflows/ubuntu.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/ubuntu.yml) | ✅ | ✅ | ✅ | ✅ | — | ✅ | — | [![Build Ubuntu](https://github.com/anyvm-org/ubuntu-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/ubuntu-builder) |
 | OpenEuler<br>[![Test openEuler](https://github.com/anyvm-org/anyvm/actions/workflows/openeuler.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/openeuler.yml) | ✅ | ✅ | ✅ | — | — | — | ✅ | [![Build openEuler](https://github.com/anyvm-org/openeuler-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/openeuler-builder) |
 | Debian<br>[![Test Debian](https://github.com/anyvm-org/anyvm/actions/workflows/debian.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/debian.yml) | ✅ | ✅ | ✅ (13 only) | ✅ (ppc64le) | — | — | — | [![Build Debian](https://github.com/anyvm-org/debian-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/debian-builder) |
+| Rocky Linux<br>[![Test Rocky](https://github.com/anyvm-org/anyvm/actions/workflows/rocky.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/rocky.yml) | ✅ | ✅ | — | ✅ (ppc64le, 10 only) | — | ✅ | — | [![Build Rocky](https://github.com/anyvm-org/rocky-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/rocky-builder) |
 | Alpine<br>[![Test Alpine](https://github.com/anyvm-org/anyvm/actions/workflows/alpine.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/alpine.yml) | ✅ | ✅ | — | — | — | — | — | [![Build Alpine](https://github.com/anyvm-org/alpine-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/alpine-builder) |
 | FreeBSD<br>[![Test FreeBSD](https://github.com/anyvm-org/anyvm/actions/workflows/freebsd.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/freebsd.yml) | ✅ | ✅ | ✅ | ✅ | — | — | — | [![Build FreeBSD](https://github.com/anyvm-org/freebsd-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/freebsd-builder) |
 | HardenedBSD<br>[![Test HardenedBSD](https://github.com/anyvm-org/anyvm/actions/workflows/hardenedbsd.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/hardenedbsd.yml) | ✅ | — | — | — | — | — | — | [![Build HardenedBSD](https://github.com/anyvm-org/hardenedbsd-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/hardenedbsd-builder) |
@@ -163,6 +164,7 @@ builder repository, which builds, boots and publishes that guest's images:
 [plan9](https://github.com/anyvm-org/plan9-builder) &middot;
 [reactos](https://github.com/anyvm-org/reactos-builder) &middot;
 [redox](https://github.com/anyvm-org/redox-builder) &middot;
+[rocky](https://github.com/anyvm-org/rocky-builder) &middot;
 [riscos](https://github.com/anyvm-org/riscos-builder) &middot;
 [solaris](https://github.com/anyvm-org/solaris-builder) &middot;
 [tribblix](https://github.com/anyvm-org/tribblix-builder) &middot;
