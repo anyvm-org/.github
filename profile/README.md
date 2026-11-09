@@ -2,7 +2,7 @@
 
 # Run any VM anywhere
 
-**One Python file boots 26 guest operating systems across 7 CPU architectures -- on Linux, macOS and Windows.**
+**One Python file boots 27 guest operating systems across 7 CPU architectures -- on Linux, macOS and Windows.**
 
 [![PyPI](https://img.shields.io/pypi/v/anyvm.py)](https://pypi.org/project/anyvm.py/)
 [![Python](https://img.shields.io/pypi/pyversions/anyvm.py)](https://pypi.org/project/anyvm.py/)
@@ -86,6 +86,7 @@ anyvm --os openbsd --release 7.9-xfce
 | Alpine<br>[![Test Alpine](https://github.com/anyvm-org/anyvm/actions/workflows/alpine.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/alpine.yml) | ✅ | ✅ | — | — | — | — | — | [![Build Alpine](https://github.com/anyvm-org/alpine-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/alpine-builder) |
 | FreeBSD<br>[![Test FreeBSD](https://github.com/anyvm-org/anyvm/actions/workflows/freebsd.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/freebsd.yml) | ✅ | ✅ | ✅ | ✅ | — | — | — | [![Build FreeBSD](https://github.com/anyvm-org/freebsd-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/freebsd-builder) |
 | HardenedBSD<br>[![Test HardenedBSD](https://github.com/anyvm-org/anyvm/actions/workflows/hardenedbsd.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/hardenedbsd.yml) | ✅ | — | — | — | — | — | — | [![Build HardenedBSD](https://github.com/anyvm-org/hardenedbsd-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/hardenedbsd-builder) |
+| HyprBSD<br>[![Test HyprBSD](https://github.com/anyvm-org/anyvm/actions/workflows/hyprbsd.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/hyprbsd.yml) | ✅ | — | — | — | — | — | — | [![Build HyprBSD](https://github.com/anyvm-org/hyprbsd-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/hyprbsd-builder) |
 | OPNsense<br>[![Test OPNsense](https://github.com/anyvm-org/anyvm/actions/workflows/opnsense.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/opnsense.yml) | ✅ | — | — | — | — | — | — | [![Build OPNsense](https://github.com/anyvm-org/opnsense-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/opnsense-builder) |
 | OpenBSD<br>[![Test OpenBSD](https://github.com/anyvm-org/anyvm/actions/workflows/openbsd.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/openbsd.yml) | ✅ | ✅ | ✅ | — | ✅ | — | — | [![Build OpenBSD](https://github.com/anyvm-org/openbsd-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/openbsd-builder) |
 | NetBSD<br>[![Test NetBSD](https://github.com/anyvm-org/anyvm/actions/workflows/netbsd.yml/badge.svg)](https://github.com/anyvm-org/anyvm/actions/workflows/netbsd.yml) | ✅ | ✅ | ✅ | — | ✅ | — | — | [![Build NetBSD](https://github.com/anyvm-org/netbsd-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/netbsd-builder) |
@@ -155,6 +156,7 @@ builder repository, which builds, boots and publishes that guest's images:
 [haiku](https://github.com/anyvm-org/haiku-builder) &middot;
 [hardenedbsd](https://github.com/anyvm-org/hardenedbsd-builder) &middot;
 [hurd](https://github.com/anyvm-org/hurd-builder) &middot;
+[hyprbsd](https://github.com/anyvm-org/hyprbsd-builder) &middot;
 [midnightbsd](https://github.com/anyvm-org/midnightbsd-builder) &middot;
 [netbsd](https://github.com/anyvm-org/netbsd-builder) &middot;
 [nextbsd](https://github.com/anyvm-org/nextbsd-builder) &middot;
